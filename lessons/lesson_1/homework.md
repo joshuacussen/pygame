@@ -6,11 +6,22 @@ parent: Lesson 1
 ---
 
 # Homework
+{: .no_toc }
 
-Create a short Pygame 'screensaver' with multiple animated elements.
-Be as creative as you like.
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Requirements
+Create a short Pygame 'screensaver' with multiple animated elements.
+Be as creative as you like.
 
 - At least four animated shapes
 - At least one shape whose movement changes over time (e.g., speed or direction)

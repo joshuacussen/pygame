@@ -6,6 +6,18 @@ parent: Lesson 3
 ---
 
 # Files
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## [constants.py](files/constants.py)
 ```python

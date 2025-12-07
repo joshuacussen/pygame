@@ -6,6 +6,19 @@ parent: Lesson 3
 ---
 
 # Objectives
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 ## Working with multiple files
 - Store configuration values in a separate file

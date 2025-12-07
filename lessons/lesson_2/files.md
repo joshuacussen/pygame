@@ -6,6 +6,18 @@ parent: Lesson 2
 ---
 
 # Files
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## [models.py](files/models.py)
 ```python

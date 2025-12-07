@@ -6,6 +6,18 @@ parent: Lesson 2
 ---
 
 # Worksheet
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Investigate
 Answer these questions by examining the code.

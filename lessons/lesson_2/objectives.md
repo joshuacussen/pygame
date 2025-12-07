@@ -6,6 +6,19 @@ parent: Lesson 2
 ---
 
 # Objectives
+{: .no_toc }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 ## Working with multiple files
 - Explain what `from x import y` does
