@@ -3,3 +3,8 @@ description: Introductory lesson to Pygame
 theme: just-the-docs
 
 url: https://joshuacussen.github.io/pygame
+
+mermaid:
+  mermaid@11.12.2
+
+enable_copy_code_button: true

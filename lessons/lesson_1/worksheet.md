@@ -1,36 +1,12 @@
 ---
 layout: default
-title: "Lesson 1"
+title: Worksheet
+nav_order: 3
+parent: Lesson 1
 ---
+# Worksheet
 
-# Lesson 1
-
-- [Objectives](#objectives)
-- [Files](#files)
-- [Worksheet](#worksheet)
-    - [Predict](#predict)
-    - [Run](#run)
-    - [Investigate](#investigate)
-    - [Modify](#modify)
-    - [Make](#make)
-- [Homework](#homework)
-    - [Requirements](#requirements)
-    - [Options](#options)
-
-## Objectives
-{% include_relative objectives.md %}
-
-
-## Files
-
-### [starter_code.py](starter_code.py)
-```python
-{% include_relative starter_code.py %}
-```
-
-## Worksheet
-
-### Predict
+## Predict
 
 Predict answers to the following questions without running the program.
 
@@ -40,12 +16,12 @@ Predict answers to the following questions without running the program.
 1. What does `clock.tick(60)` control?
 1. What will happen when you close the window?
 
-### Run
+## Run
 
 Run the program.
 Compare your predictions to the actual behaviour.
 
-### Investigate
+## Investigate
 
 Answer these questions by examining the code.
 
@@ -66,7 +42,7 @@ Answer these questions by examining the code.
     - What does this tell you about what this line does?
 1. What happens when the shape reaches the edge of the window?
 
-### Modify
+## Modify
 Make changes to explore how the code works.
 
 1. Identify and remove at least three magic numbers by replacing them with variables.
@@ -80,44 +56,19 @@ Make changes to explore how the code works.
 1. Prevent the shape from leaving the window.
     - Hint: use selection and check the x-coordinate relative to `WIDTH` and `0`
 
-### Make
+## Make
 Create a small animation scene using only things covered so far.
 
-#### Requirements
+### Requirements
 Your animation must include:
 - One static shape
 - One moving shape
 - At least one colour change
 - One use of `WIDTH` or `HEIGHT` in a calculation
 
-#### Ideas to try
+### Ideas to try
 - A rectangle sliding across the screen
 - A circle moving diagonally
 - A shape that changes colour once at startup
 - A shape that changes colour every 10 clock ticks
 - Something positioned using `WIDTH // 3` or `HEIGHT // 4`
-
-
-## Homework
-
-Create a short Pygame 'screensaver' with multiple animated elements.
-Be as creative as you like.
-
-### Requirements
-
-- At least four animated shapes
-- At least one shape whose movement changes over time (e.g., speed or direction)
-- At least one shape that bounces off the edge of the window (separate to the shape above)
-- A colour change that happens during the animation
-- A timed event: after some amount of time, something must change (e.g., a shape appears/disappears, colour change, movement change)
-
-### Options
-
-Choose two or more optional enhancements:
-- A shape that follows a curved path
-    - Hint: change both x and y each frame by different amounts
-- A shape that grows or shrinks in size
-- A fade effect using gradually changing background colours
-- A simple caption or title drawn using `pygame.font`
-- A shape that 'reacts' to another (e.g., follows it, changes colour when near it)
-- Encapsulate a shape and appropriate attributes in a class (e.g., position, speed, colour, update method)

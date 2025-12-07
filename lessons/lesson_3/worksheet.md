@@ -1,42 +1,13 @@
 ---
 layout: default
-title: "Lesson 3"
+title: Worksheet
+nav_order: 3
+parent: Lesson 3
 ---
 
-# Lesson 3
+# Worksheet
 
-- [Objectives](#objectives)
-- [Files](#files)
-- [Worksheet](#worksheet)
-    - [Predict](#predict)
-    - [Run](#run)
-    - [Investigate](#investigate)
-    - [Modify](#modify)
-    - [Make](#make)
-
-## Objectives
-{% include_relative objectives.md %}
-
-
-## Files
-### [constants.py](constants.py)
-```python
-{% include_relative constants.py %}
-```
-
-### [models.py](models.py)
-```python
-{% include_relative models.py %}
-```
-
-### [main.py](main.py)
-```python
-{% include_relative main.py %}
-```
-
-## Worksheet
-
-### Predict
+## Predict
 Predict answers to the following questions without running the program.
 
 1. What does `setup()` do in `main.py`?
@@ -52,11 +23,11 @@ Predict answers to the following questions without running the program.
     - Will the player move in a straight line, diagonally, or not at all?
 
 
-### Run
+## Run
 Run the program.
 Compare your predictions to the actual behaviour.
 
-### Investigate
+## Investigate
 Answer these questions by examining the code.
 
 1. Why is `setup()` separate from `main()`?
@@ -85,7 +56,7 @@ Answer these questions by examining the code.
     - Why does the order of method calls inside `update()` matter?
     - Why is this method public, but `_move()` and `_draw()` are private?
 
-### Modify
+## Modify
 Make changes to explore how the code works.
 
 1. Change which keys move the player.
@@ -109,10 +80,10 @@ Make changes to explore how the code works.
 
 
 
-### Make
+## Make
 Create a new class called `Enemy` that automatically moves toward the player each frame.
 
-#### Requirements
+### Requirements
 Your `Enemy` class must:
 1. Use a `pygame.Rect` to represent position and size.
 1. Store private attributes for:
@@ -128,7 +99,7 @@ Your `Enemy` class must:
 1. Respect window boundaries and stop at the edges.
 1. Appear on screen alongside the player.
 
-#### Hints
+### Hints
 
 You can get the player's centre using:
 ```python
@@ -151,7 +122,7 @@ Each small step should be the enemy's speed value.
 
 You will need to extend this to work with the y-axis too.
 
-#### Options
+### Options
 Choose two or more optional enhancements:
 - Fast and slow modes
     - Press a key to toggle between fast and slow chasing speeds

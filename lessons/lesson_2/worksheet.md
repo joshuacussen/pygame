@@ -1,36 +1,13 @@
 ---
 layout: default
-title: "Lesson 2"
+title: Worksheet
+nav_order: 3
+parent: Lesson 2
 ---
 
-# Lesson 2
+# Worksheet
 
-- [Objectives](#objectives)
-- [Files](#files)
-- [Worksheet](#worksheet)
-    - [Investigate](#investigate)
-    - [Modify](#modify)
-    - [Make](#make)
-    - [Extensions](#extensions)
-
-## Objectives
-{% include_relative objectives.md %}
-
-## Files
-
-### [models.py](models.py)
-```python
-{% include_relative models.py %}
-```
-
-### [main.py](main.py)
-```python
-{% include_relative main.py %}
-```
-
-## Worksheet
-
-### Investigate
+## Investigate
 Answer these questions by examining the code.
 
 1. What does `from models import Ball` do in `main.py`?
@@ -42,10 +19,11 @@ Answer these questions by examining the code.
 1. Why does `update` call both `move` and `draw`?
 1. Why does the `_draw` method need `screen` as a parameter?
 
-### Modify
+## Modify
 Make changes to explore how the code works.
 
 1. Implement the constructor using the information below:
+
     | Visibility | Name   | Type | Description |
     |-----------|--------|------|-------------|
     | private   | `x`    | int  | Horizontal position of the ball’s centre |
@@ -53,12 +31,14 @@ Make changes to explore how the code works.
     | private   | `vx`   | int  | Horizontal velocity (change in x each frame) |
     | private   | `vy`   | int  | Vertical velocity (change in y each frame) |
     | private   | `radius` | int | Size of the ball |
-1. Implement the `_draw` method
-1. Implement the `_move` method
+
+2. Implement the `_draw` method
+3. Implement the `_move` method
     - At this stage, **do not** implement bouncing
 
 
-### Make
+
+## Make
 1. Use the information below to implement the missing `get` methods (`get_coords`, `_get_left`, `_get_right`, `_get_top`, `_get_bottom`).
 
     The `_get_<direction>` methods should return the position of the ball's edge in that direction (hint: how can you use the ball's radius to work this out?).
@@ -93,23 +73,23 @@ def update(self, screen, x_bounds, y_bounds):
     self._draw(screen)
 ```
 
-### Extensions
+## Extensions
 Complete these tasks in any order.
 
-#### Colour changing
+### Colour changing
 1. Implement a `_change_color(new_color)` method to change the ball's colour
 1. Modify `_move` so the ball changes colour each time it bounces.
 
-#### Inside-bounds?
+### Inside-bounds?
 Implement a `inside_bounds(x_bounds, y_bounds)` method:
 - Returns True if every part of the ball is within given bounds
 - Returns False otherwise
 
-#### Randomised bounce velocities
+### Randomised bounce velocities
 Change `_move` so that, when the ball bounces, the velocity is slightly randomised.
 Make sure the ball cannot become frozen!
 
-#### Decaying velocity
+### Decaying velocity
 Create a `DecayingBall` class that inherits from `Ball`.
 - Add a new attribute, `decay_factor` (e.g., 0.9)
 - Override `_move` so that velocity is scaled after each bounce
