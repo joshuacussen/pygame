@@ -25,11 +25,14 @@ Answer these questions by examining the code.
 1. What does `from models import Ball` do in `main.py`?
 1. Why does `main.py` create a list of balls instead of storing them in separate variables?
 1. What do the two `for` loops do in `main.py`?
-1. What does `p_color=(255, 0, 0), p_vx=0, p_vy=0` mean in the constructor signature in `models.py`?
+1. What is unusual about the constructor signature?
+    - What does `p_color=(255, 0, 0), p_vx=0, p_vy=0` mean in the constructor signature in `models.py`?
+    - Why do the other parameters not have `=` signs?
+    - What do the `=` signs mean?
 1. Why does the `Ball` object need all of the parameters as attributes? 
-1. Why are the `_draw` and `_move` methods private?
-1. Why does `update` call both `move` and `draw`?
-1. Why does the `_draw` method need `screen` as a parameter?
+1. Why are the `_draw()` and `_move()` methods private?
+1. Why does `update()` call both `_move()` and `_draw()`?
+1. Why does the `_draw()` method need `screen` as a parameter?
 
 ## Modify
 Make changes to explore how the code works.
@@ -42,18 +45,19 @@ Make changes to explore how the code works.
     | private   | `y`    | int  | Vertical position of the ball’s centre |
     | private   | `vx`   | int  | Horizontal velocity (change in x each frame) |
     | private   | `vy`   | int  | Vertical velocity (change in y each frame) |
+    | private   | `color`   | tuple  | Colour in `(R, G, B)` format|
     | private   | `radius` | int | Size of the ball |
 
-2. Implement the `_draw` method
-3. Implement the `_move` method
+2. Implement the `_draw()` method
+3. Implement the `_move()` method
     - At this stage, **do not** implement bouncing
 
 
 
 ## Make
-1. Use the information below to implement the missing `get` methods (`get_coords`, `_get_left`, `_get_right`, `_get_top`, `_get_bottom`).
+1. Use the information below to implement the missing `get` methods (`get_coords()`, `_get_left()`, `_get_right()`, `_get_top()`, `_get_bottom()`).
 
-    The `_get_<direction>` methods should return the position of the ball's edge in that direction (hint: how can you use the ball's radius to work this out?).
+    The `_get_<direction>()` methods should return the position of the ball's edge in that direction (hint: how can you use the ball's radius to work this out?).
 
 | Visibility | Method Signature | Returns | Description |
 |-----------|------------------|---------|-------------|
@@ -70,7 +74,7 @@ Make changes to explore how the code works.
 2. Once all the getters work, update `move` so the ball cannot leave the window.
     - When the ball reaches and edge, it should bounce by reversing the appropriate velocity.
 
-You will need to update the `update` method:
+You will need to update the `update()` method:
 ```python
 def update(self, screen, x_bounds, y_bounds):
     """
@@ -98,10 +102,10 @@ Implement a `inside_bounds(x_bounds, y_bounds)` method:
 - Returns False otherwise
 
 ### Randomised bounce velocities
-Change `_move` so that, when the ball bounces, the velocity is slightly randomised.
+Change `_move()` so that, when the ball bounces, the velocity is slightly randomised.
 Make sure the ball cannot become frozen!
 
 ### Decaying velocity
 Create a `DecayingBall` class that inherits from `Ball`.
 - Add a new attribute, `decay_factor` (e.g., 0.9)
-- Override `_move` so that velocity is scaled after each bounce
+- Override `_move()` so that velocity is scaled after each bounce
