@@ -1,7 +1,7 @@
 import sys
 import pygame
-import lessons.lesson_3.files.constants as constants
-from lessons.lesson_3.files.models import Player
+import constants
+from models import Player
 
 
 def setup():
