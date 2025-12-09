@@ -45,7 +45,7 @@ Make changes to explore how the code works.
     | private   | `y`    | int  | Vertical position of the ball’s centre |
     | private   | `vx`   | int  | Horizontal velocity (change in x each frame) |
     | private   | `vy`   | int  | Vertical velocity (change in y each frame) |
-    | private   | `color`   | tuple  | Colour in `(R, G, B)` format|
+    | private   | `color` | tuple  | Colour in `(R, G, B)` format|
     | private   | `radius` | int | Size of the ball |
 
 2. Implement the `_draw()` method
