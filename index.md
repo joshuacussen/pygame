@@ -8,5 +8,5 @@ nav_order: 1
 
 ---
 
-Use the navigation menu on the left to view lesson resources.
+Use the navigation menu view lesson resources.
 
