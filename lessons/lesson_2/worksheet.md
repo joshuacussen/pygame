@@ -26,9 +26,9 @@ Answer these questions by examining the code.
 1. Why does `main.py` create a list of balls instead of storing them in separate variables?
 1. What do the two `for` loops do in `main.py`?
 1. What is unusual about the constructor signature?
-    - What does `p_color=(255, 0, 0), p_vx=0, p_vy=0` mean in the constructor signature in `models.py`?
-    - Why do the other parameters not have `=` signs?
-    - What do the `=` signs mean?
+  - What does `p_color=(255, 0, 0), p_vx=0, p_vy=0` mean in the constructor signature in `models.py`?
+  - Why do the other parameters not have `=` signs?
+  - What do the `=` signs mean?
 1. Why does the `Ball` object need all of the parameters as attributes? 
 1. Why are the `_draw()` and `_move()` methods private?
 1. Why does `update()` call both `_move()` and `_draw()`?
