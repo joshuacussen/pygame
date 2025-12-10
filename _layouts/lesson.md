@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: default
 ---
 
 {% include title_toc.md %}
